@@ -3337,6 +3337,7 @@ body::after {
     gap: 1.25rem
   }
   .faq__img {
+    width: auto;
     border-radius: 0;
     margin: 0 -.9375rem
   }
