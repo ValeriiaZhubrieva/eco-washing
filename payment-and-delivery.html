@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240828112116">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240828133415">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,8 +35,8 @@
 								<a href="tel:+380689909917" class="header__link">
 									+38 068 990 99 17
 								</a>
-								<a href="tel:+380689909917" class="header__link">
-									+38 068 990 99 17
+								<a href="tel:+380996445687" class="header__link">
+									+38 099 644 56 87
 								</a>
 							</div>
 						</div>
@@ -284,7 +284,7 @@
 						</h2>
 						<p class="way__text">
 							На все про все 24 години або 8 годин
-							с послугою <a href="">Turbo прання</a>
+							с послугою <a data-popup="#popup-turbo" href="">Turbo прання</a>
 						</p>
 					</div>
 					<div class="way__steps">
@@ -433,7 +433,7 @@
 									<div class="contacts__item-links">
 										<a href="tel:+380689909917">+38 068 990 99 17</a>
 										<span>|</span>
-										<a href="tel:+380689909917">+38 068 990 99 17</a>
+										<a href="tel:+380996445687">+38 099 644 56 87</a>
 									</div>
 								</div>
 								<div class="contacts__item">
@@ -556,7 +556,7 @@
 								<div class="footer__nav-phones">
 									<a href="tel:+380689909917">+38 068 990 99 17</a>
 									<span>|</span>
-									<a href="tel:+380689909917">+38 068 990 99 17</a>
+									<a href="tel:+380996445687">+38 099 644 56 87</a>
 								</div>
 							</div>
 							<div class="footer__nav-contact">
@@ -651,7 +651,28 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240828112116"></script>
+
+	<div id="popup-turbo" aria-hidden="true" class="popup popup-turbo">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="25" height="25" viewBox="0 0 25 25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.731384 0.49098C1.38795 -0.16366 2.45244 -0.16366 3.109 0.49098L24.5076 21.8269C25.1641 22.4816 25.1641 23.5429 24.5076 24.1976C23.851 24.8522 22.7865 24.8522 22.13 24.1976L0.731384 2.86164C0.0748223 2.207 0.0748221 1.14562 0.731384 0.49098Z" />
+						<path d="M24.2686 0.802416C24.9252 1.45706 24.9252 2.51844 24.2686 3.17308L2.87004 24.509C2.21348 25.1637 1.14898 25.1637 0.492421 24.509C-0.16414 23.8544 -0.16414 22.793 0.492421 22.1384L21.891 0.802416C22.5476 0.147776 23.6121 0.147776 24.2686 0.802416Z" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<h3 class="popup__title">
+						Послуга Turbo
+					</h3>
+					<p class="popup__text">
+						Нема часу? Послуга швидкого прання з безкоштовною доставкою протягом 8 годин.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240828133415"></script>
 </body>
 
 </html>

@@ -377,11 +377,17 @@ body::after {
   text-align: center;
   margin-bottom: 1.25rem
 }
+.popup-turbo .popup__title {
+  text-align: left
+}
 .popup__text {
   font-size: 1.125rem;
   line-height: 120%;
   text-align: center;
   margin-bottom: 1.25rem
+}
+.popup-turbo .popup__text {
+  text-align: left
 }
 .popup__form {
   max-width: 29.375rem;
@@ -519,8 +525,9 @@ body::after {
   padding: .875rem 1.1875rem;
   min-height: 3.3125rem;
   font-size: 1.125rem;
+  color: var(--black);
   background-color: var(--contrast);
-  transition: all .3s ease-in-out
+  transition: text-shadow .3s
 }
 .button-empty {
   max-width: -webkit-fit-content;
@@ -536,8 +543,9 @@ body::after {
   border: 2px solid var(--brand);
   min-height: 3.3125rem;
   font-size: 1.125rem;
+  color: var(--black);
   background-color: rgba(0,0,0,0);
-  transition: all .3s ease-in-out
+  transition: text-shadow .3s
 }
 .button-green {
   max-width: -webkit-fit-content;
@@ -554,7 +562,7 @@ body::after {
   font-size: 1.125rem;
   background-color: var(--brand);
   color: #fff;
-  transition: all .3s ease-in-out
+  transition: text-shadow .3s
 }
 .title {
   font-weight: 700;
@@ -1437,6 +1445,7 @@ body::after {
   column-gap: 8.125rem
 }
 .faq__img {
+  width: 100%;
   overflow: hidden;
   border-radius: 0 1.25rem 1.25rem 0
 }
@@ -3999,11 +4008,11 @@ body::after {
     padding: .625rem .8125rem
   }
   .table-prices__prices {
-    font-size: .75rem;
-    padding: .3125rem .375rem
+    font-size: 1rem;
+    padding: .3125rem
   }
   .table-prices__oldprice {
-    font-size: .625rem
+    font-size: .75rem
   }
   .process__info {
     padding: 1.25rem;
@@ -4024,10 +4033,10 @@ body::after {
 }
 @media (max-width:24.99875em) {
   .table-prices__head {
-    grid-template-columns: 1fr 3.75rem
+    grid-template-columns: 1fr 5rem
   }
   .table-prices__row {
-    grid-template-columns: 1fr 3.75rem
+    grid-template-columns: 1fr 5rem
   }
 }
 @media (max-width:23.74875em) {
@@ -4068,13 +4077,7 @@ body::after {
     color: var(--brand-dark)
   }
   .button:hover {
-    font-weight: 700
-  }
-  .button-empty:hover {
-    font-weight: 700
-  }
-  .button-green:hover {
-    font-weight: 700
+    text-shadow: 0 .9px 0 var(--black)
   }
   .breadcrumbs__link:hover {
     color: var(--brand-dark)
@@ -4139,5 +4142,13 @@ body::after {
   }
   .article-detail__text ol>li a:hover {
     color: var(--brand)
+  }
+}
+@media (any-hover:hover)and (any-hover:hover) {
+  .button-empty:hover:hover {
+    text-shadow: 0 .9px 0 var(--black)
+  }
+  .button-green:hover:hover {
+    text-shadow: 0 .9px 0 #fff
   }
 }
